@@ -16,15 +16,10 @@ namespace BigSchool2.Models
         [Required]
         [StringLength(255)]
         public string Place { get; set; }
+        public DateTime DateTime { get; set; }
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
     }
-    public class Category
-    {
-        public byte Id { get; set; }
-        [Required]
-        [StringLength(255)]
-        public string Name { get; set; }
-    }
+
 }
